@@ -1,0 +1,71 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    
+    --darkHex: #11142A;
+    --accent1Hex: #0A93F4;
+    --accent2Hex: #FD4766;
+    --accent3Hex: #000000;
+    --lightHex: #EEEFEF;
+
+    --darkRGB: 17, 20, 42;
+    --accent1RGB: 10, 147, 244;
+    --accent2RGB: 253, 71, 102;
+    --accent3RGB: 0, 0, 0;
+    --lightRGB: 238, 239, 239;
+}
+
+body {
+    background-color: rgba(var(--darkRGB), 1) !important;
+    font-family: "Poppins", Poppins !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Text color */
+
+.text-dark {
+    color: rgba(var(--darkRGB), 1) !important;
+}
+
+.text-accent1-custom {
+    color: rgba(var(--accent1RGB), 1) !important;
+}
+
+.text-accent2 {
+    color: rgba(var(--accent2RGB), 1) !important;
+}
+
+.text-accent3 {
+    color: rgba(var(--accent3RGB), 1) !important;
+}
+
+.text-light-custom {
+    color: rgba(var(--lightRGB), 1) !important;
+}
+
+/* Background color*/
+
+.bg-dark {
+    background-color: rgba(var(--darkRGB), 1) !important;
+}
+
+.bg-accent1-custom {
+    background-color: rgba(var(--accent1RGB), 1) !important;
+}
+
+.bg-accent2 {
+    background-color: rgba(var(--accent2RGB), 1) !important;
+}
+
+.bg-accent3 {
+    background-color: rgba(var(--accent3RGB), 1) !important;
+}
+
+.bg-light-custom {
+    background-color: rgba(var(--lightRGB), 1) !important;
+}
+
