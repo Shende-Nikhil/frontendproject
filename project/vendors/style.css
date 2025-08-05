@@ -229,7 +229,7 @@ p{
 }
 #contact .form-control,
 #contact  textarea{
-    background-color: rgba(var(--lightRGB), 1) ;
+    background-color: transparent ;
     border-color: rgba(var(--lightRGB), 1) ;
     color: rgba(var(--lightRGB), 1) ;
     font-size: 15px;
