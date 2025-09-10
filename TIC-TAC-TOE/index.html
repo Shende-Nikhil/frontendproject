@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="./vendors/bootstrap-5.3.7-dist/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="./vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="./vendors/fontawesome-free-7.0.0-web/css/all.css">
+</head>
+<body>
+  <div class="game-container ">
+    <h1 class="mb-5 text-danger">🎮 Tic Tac Toe</h1>
+
+    <!-- Game Mode Selector -->
+    <div class="mb-3 p-2">
+      <label for="modeSelect" class="form-label fw-semibold text-warning">Game Mode:</label>
+      <select id="modeSelect" class="form-select w-auto d-inline-block">
+        <option value="pvp">👥 Two Players</option>
+        <option value="cpu">🤖 CPU Vs (Easy)</option>
+      </select>
+    </div>
+
+    <!-- Status -->
+    <div id="status" class="fw-semibold text-info">Player X's Turn</div>
+
+    <!-- Board -->
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <table class="table table-bordered border-dark">
+          <tbody>
+            <tr>
+              <td class="cell"></td>
+              <td class="cell"></td>
+              <td class="cell"></td>
+            </tr>
+            <tr>
+              <td class="cell"></td>
+              <td class="cell"></td>
+              <td class="cell"></td>
+            </tr>
+            <tr>
+              <td class="cell"></td>
+              <td class="cell"></td>
+              <td class="cell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Reset -->
+    <button id="resetBtn" class="btn btn-primary mt-3 px-4 py-2">🔄 Reset Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
