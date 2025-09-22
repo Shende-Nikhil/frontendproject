@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: sans-serif;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container form input {
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+/* card styling */
+.card {
+  border: none;
+}
+
+#quiz-container {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Question text */
+#questionText {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Option buttons */
+.option-btn {
+  border-radius: 12px !important;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.option-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Success and danger styling (correct/wrong answers) */
+.list-group-item-success {
+  background-color: #d4edda !important;
+  color: #155724 !important;
+  border: 1px solid #c3e6cb !important;
+}
+
+.list-group-item-danger {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+  border: 1px solid #f5c6cb !important;
+}
+
+/* Buttons */
+#nextBtn,
+#restartBtn {
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-weight: 600;
+}

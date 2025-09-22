@@ -1,0 +1,64 @@
+h1{
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px  rgb(243, 241, 241);
+}
+p{
+    color: #4b014d;
+    text-decoration: underline;
+    text-shadow: 3px 3px rgb(217, 182, 182);
+}
+
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 40px;
+  justify-content: center;
+  width: 800px;  
+  margin: 40px auto;
+}
+
+.card {
+  width: 180px;  
+  height: 250px;   
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px; 
+  font-weight: 700;
+  padding: 100px;
+  text-align: center;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 16px rgba(0,0,0,0.3);
+}
+
+.card.flipped {
+  background: #690a4c;
+  color: #0a0a0a;
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px rgba(0,0,0,0.4);
+}
+
+#restart {
+  margin-top: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 5px;
+  background: rgb(125, 83, 83);
+  color:white;
+  transition: background 0.2s;
+}
+
+#restart:hover {
+  background: #4b014d;
+  color:white;
+}
